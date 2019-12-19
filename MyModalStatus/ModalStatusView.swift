@@ -32,6 +32,7 @@ class ModalStatusView: UIView {
 
     
   func setUpView(){
+ let nibName = "ModalStatusView"
         
         print("setup")
     }
