@@ -10,10 +10,16 @@ import UIKit
 
 class ModalStatusView: UIView {
 
- 
+    //comment
     
     @IBOutlet weak var statusImage: UIImageView!
     
     @IBOutlet weak var headlineLabel: UILabel!
     @IBOutlet weak var subHeadlineLabel: UILabel!
+    
+    
+
+    
+    
+    
 }
