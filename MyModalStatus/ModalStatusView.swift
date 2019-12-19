@@ -30,11 +30,21 @@ class ModalStatusView: UIView {
       setUpView()
     }
 
-    
-  func setUpView(){
  let nibName = "ModalStatusView"
+    var contentView: UIView!
+
+    private func setUpView() {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: self.nibName, bundle: bundle)
+        self.contentView = nib.instantiate(withOwner: self, options: nil).first as? UIView
+        addSubview(contentView)
         
-        print("setup")
+        contentView.center = self.center
+        contentView.autoresizingMask = []
+        contentView.translatesAutoresizingMaskIntoConstraints = true
+        
+        headlineLabel.text = ""
+        subHeadlineLabel.text = ""
     }
     
 }
