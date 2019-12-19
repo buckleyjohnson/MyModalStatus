@@ -10,6 +10,7 @@ import UIKit
 
 class ModalStatusView: UIView {
 
+ 
     //comment
     
     @IBOutlet weak var statusImage: UIImageView!
